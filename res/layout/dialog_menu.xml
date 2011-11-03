@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@drawable/bg_menu"
+  android:id="@+id/dialog_bg">
+  <Button
+      android:layout_width="wrap_content"
+  	  android:layout_height="wrap_content"
+  	  android:layout_marginLeft="75dp"
+  	  android:layout_marginTop="60dp"
+  	  android:id="@+id/btn_musicchange"
+  	  android:background="@drawable/music_on"
+  />
+  <EditText
+      android:layout_width="wrap_content"
+  	  android:layout_height="wrap_content"
+  	  android:id="@+id/edit_phonenumber"
+  	  android:layout_below="@id/btn_musicchange"
+  	  android:layout_marginTop="15dp"
+  	  android:layout_marginLeft="35dp"
+  	  android:phoneNumber="true"
+  	  android:width="120dp"
+  	  android:textSize="12dp"
+  />
+  <Button
+      android:layout_width="wrap_content"
+  	  android:layout_height="wrap_content"
+  	  android:id="@+id/btn_numberenter"
+  	  android:layout_below="@id/btn_musicchange"
+  	  android:layout_toRightOf="@id/edit_phonenumber"
+  	  android:layout_alignBottom="@id/edit_phonenumber"
+  	  android:layout_alignTop="@id/edit_phonenumber"
+  	  android:text="确定"
+  	  android:textSize="12dp"
+  />
+</RelativeLayout>

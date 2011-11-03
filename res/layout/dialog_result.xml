@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="207dp"
+  android:layout_height="264dp"
+  android:id="@+id/dialog_bg"
+  >
+  <ImageView
+     android:layout_width="wrap_content"
+ 	 android:layout_height="wrap_content"
+ 	 android:layout_alignParentLeft="true"
+ 	 android:layout_alignParentTop="true"
+  	 android:id="@+id/image_level"
+  />
+  <TextView
+   	 android:layout_width="wrap_content"
+ 	 android:layout_height="wrap_content"
+ 	 android:id="@+id/text_maxpoint"
+     android:layout_marginTop="60dp"
+     android:layout_alignParentRight="true"
+     android:layout_marginRight="20dp"
+     android:textSize="18dp"
+     android:textColor="#123456"
+  />
+  <ImageView
+     android:layout_width="wrap_content"
+ 	 android:layout_height="wrap_content"
+ 	 android:layout_below="@id/text_maxpoint"
+ 	 android:layout_alignLeft="@id/text_maxpoint"
+ 	 android:id="@+id/image_maxstar"
+  />
+  
+  <TextView
+   	 android:layout_width="wrap_content"
+ 	 android:layout_height="wrap_content"
+ 	 android:id="@+id/text_currentpoint"
+     android:layout_marginTop="175dp"
+     android:layout_alignParentLeft="true"
+     android:layout_marginLeft="20dp"
+     android:textSize="18dp"
+     android:textColor="#123456"
+  />
+  <ImageView
+     android:layout_width="wrap_content"
+ 	 android:layout_height="wrap_content"
+ 	 android:layout_below="@id/text_currentpoint"
+ 	 android:layout_alignLeft="@id/text_currentpoint"
+ 	 android:id="@+id/image_currentstar"
+  />
+  
+  <TextView
+  	 android:layout_width="wrap_content"
+ 	 android:layout_height="wrap_content"
+ 	 android:id="@+id/text_random_currentpoint"
+ 	 android:layout_marginLeft="65dp"
+ 	 android:layout_marginTop="185dp"
+ 	 android:textColor="#123456"
+  />
+  
+  <TextView
+     android:layout_width="wrap_content"
+ 	 android:layout_height="wrap_content"
+ 	 android:id="@+id/text_random_maxpoint"
+ 	 android:layout_marginRight="30dp"
+ 	 android:layout_alignParentRight="true"
+ 	 android:layout_marginTop="85dp"
+ 	 android:textColor="#123456"
+  />
+</RelativeLayout>

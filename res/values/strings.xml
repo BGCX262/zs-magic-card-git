@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Main!</string>
+    <string name="app_name">MagicCard</string>
+<string name="disclaimer">您使用的第三方应用程序并非由中国移动开发和拥有，中国移动不承担应用程序任何方面的任何责任，包括但不限于其性能，使用时产生的费用，知识产权或支持。欲了解详情，请参考菜单帮助项.</string>
+</resources>

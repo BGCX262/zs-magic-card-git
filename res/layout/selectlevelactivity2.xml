@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/bg_chooselevel_02">
+  <ImageView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+  	 android:id="@+id/image_title"
+  	 android:layout_centerHorizontal="true"
+  	 android:layout_marginBottom="30dp"
+  	 android:layout_marginTop="30dp"
+  />
+  <GridView
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:id="@+id/grid_level"
+     android:layout_below="@id/image_title"
+     android:layout_centerInParent="true"
+     android:verticalSpacing="25dp"
+     android:numColumns="3"
+  />
+  
+  <Button
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/dialog_btn_change"
+     android:layout_alignParentTop="true"
+     android:layout_alignParentRight="true"
+     android:background="@drawable/goback"
+  />
+</RelativeLayout>

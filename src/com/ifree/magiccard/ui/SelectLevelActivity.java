@@ -97,6 +97,7 @@ public class SelectLevelActivity extends BasicActivity implements OnClickListene
 	{   
 		int level = Share.getLevel(this);
 		this.setContentView(R.layout.selectlevelactivity);
+		//zs：在layout中设置android:visibility="gone" 所以不会显示
 		rlBuy = (RelativeLayout) this.findViewById(R.id.rlBuy);
 		btn_close = this.findViewById(R.id.dialog_btn_change);
 		btn_close.setOnClickListener(this);
@@ -146,6 +147,7 @@ public class SelectLevelActivity extends BasicActivity implements OnClickListene
 //	    }
 		getNumberImage();
 		this.setContentView(R.layout.selectlevelactivity2);
+		//zs：这个id为 image_title 的 ImageView 是在 layout 中定义的，使用的时候再给它图片
 		ImageView iv = (ImageView)this.findViewById(R.id.image_title);
 		if(level == 10)
 			iv.setImageResource(R.drawable.chooselevel_lv_01);
@@ -278,7 +280,7 @@ public class SelectLevelActivity extends BasicActivity implements OnClickListene
 			data.putInt("level", level + arg2);
 			Intent intent = new Intent();
 			intent.setClass(this, GameActivity.class);
-			intent.putExtras(data);
+			intent.putExtras(data);//zs：通过bundle在activity间传递数据
 			startActivity(intent);
 			this.finish();
 		}
